@@ -4,12 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
   },
   "keywords": [],
   "author": "Michael Meyer",
   "license": "MIT",
   "peerDependencies": {
     "react": "^16.8.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-typescript": "^8.2.5",
+    "@types/rollup": "^0.54.0",
+    "rollup": "^2.56.2",
+    "rollup-plugin-auto-external": "^2.0.0",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-terser": "^7.0.2",
+    "typescript": "^4.3.5"
   }
 }
