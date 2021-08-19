@@ -1,16 +1,4 @@
-import { useEffect } from 'react';
+import useOnMessage from './useOnMessage';
+import usePostMessage from './usePostMessage';
 
-export function usePostMessage(object: any, options = '*'): void {
-  parent.postMessage({ pluginMessage: object }, options);
-}
-
-export function useOnMessage(inputFunction?: (data: any) => void): any {
-  useEffect(() => {
-    window.onmessage = (event) => {
-      let data = event.data.pluginMessage;
-      if (inputFunction) {
-        inputFunction(data);
-      }
-    };
-  }, []);
-}
+export { useOnMessage, usePostMessage };

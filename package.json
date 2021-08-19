@@ -1,26 +1,40 @@
 {
   "name": "figma-react-hooks",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.1.0",
+  "description": "Custom React hooks for the available Figma plugin UI actions",
+  "main": "dist/bundle.js",
+  "module": "dist/bundle.esm.js",
   "scripts": {
     "build": "rollup -c",
-    "dev": "rollup -c -w"
+    "dev": "rollup -c -w",
+    "prepublishOnly": "npm run build"
   },
-  "keywords": [],
+  "keywords": [
+    "React",
+    "Hooks",
+    "Figma"
+  ],
   "author": "Michael Meyer",
   "license": "MIT",
   "peerDependencies": {
-    "react": "^16.8.0"
+    "react": "^16.8.0 || ^17.0.0"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.4",
     "@rollup/plugin-typescript": "^8.2.5",
     "@types/rollup": "^0.54.0",
     "rollup": "^2.56.2",
     "rollup-plugin-auto-external": "^2.0.0",
     "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-terser": "^7.0.2",
     "typescript": "^4.3.5"
+  },
+  "bugs": {
+    "url": "https://github.com/mtmeyer/figma-react-hooks/issues"
+  },
+  "homepage": {
+    "url": "https://github.com/mtmeyer/figma-react-hooks#readme"
   }
 }
