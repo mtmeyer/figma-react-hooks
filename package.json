@@ -1,6 +1,6 @@
 {
   "name": "figma-react-hooks",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Custom React hooks for the available Figma plugin UI actions",
   "main": "dist/bundle.js",
   "module": "dist/bundle.esm.js",
