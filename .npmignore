@@ -3,6 +3,9 @@ test-project
 src
 rollup.config.js
 .prettierrc
+README.md
+tsconfig.json
+.github
 
 # Logs
 logs
