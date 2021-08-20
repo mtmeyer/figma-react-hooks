@@ -6,6 +6,7 @@ rollup.config.js
 README.md
 tsconfig.json
 .github
+img
 
 # Logs
 logs

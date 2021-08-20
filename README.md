@@ -1,6 +1,6 @@
 # Figma React Hooks
 
-![](img/header.svg)
+![](img/readme-banner.svg)
 
 A tiny collection of React hooks to make writing Figma plugins simpler <sup>1</sup>.
 
