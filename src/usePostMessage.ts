@@ -1,3 +1,3 @@
-export default function usePostMessage(object: any, options = '*'): void {
-  parent.postMessage({ pluginMessage: object }, options);
+export default function usePostMessage(data: any, origin = '*'): void {
+  parent.postMessage({ pluginMessage: data }, origin);
 }
