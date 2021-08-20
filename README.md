@@ -14,7 +14,9 @@ To install simply run
 npm i figma-react-hooks
 ```
 
-## Hooks
+---
+
+## Usage
 
 There are currently 2 hooks available in this library.
 
@@ -50,6 +52,8 @@ useOnMessage((data) => anAwesomeFunction(data));
 ```
 
 I will be adding the ability to pass nothing into `useOnMessage` and have it return the data as an object, rather than relying on passing in a function.
+
+---
 
 ### usePostMessage
 
