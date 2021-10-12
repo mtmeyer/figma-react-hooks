@@ -1,14 +1,16 @@
-import { useEffect } from 'react';
+import { useEffect , useState} from 'react';
 
-// TODO: Add ability to return data without having to pass in a function.
-
-export default function useOnMessage(inputFunction: (data: any) => void): any {
+export default function useOnMessage() {
+  const [msg, setMsg] = useState();
   useEffect(() => {
-    window.onmessage = (event) => {
-      let data = event.data.pluginMessage;
-      if (inputFunction) {
-        inputFunction(data);
+    const handleMsg = (event) => {
+      if (event.data.pluginMessage) {
+        setMsg(event.data.pluginMessage);
       }
     };
+    window.addEventListener('message', handleMsg);
+    return window.removeEventListener('message', handleMsg);
   }, []);
+
+  return msg;
 }
